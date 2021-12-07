@@ -1,0 +1,23 @@
+
+.swiper-slide {
+    width: 164px;
+    height: 149px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.slideImage {
+    width: 164px;
+    height: 149px;
+    border-radius: 10px;
+}
+
+.slideBlock {
+    width: 164px;
+    height: 149px;
+    box-shadow: 0px 3px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 10px;
+    cursor: pointer;
+    overflow: hidden;    
+}

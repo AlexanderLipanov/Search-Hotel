@@ -1,0 +1,166 @@
+.loginDashboard {
+    width: 100%;
+    height: 100%;
+    background: url('D:/Projects/Test Tasks/Task2/my-app/src/image/backgroundLogin.png');
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.loginDashboardBlur {
+    width: 100%;
+    height: 100%;    
+    background: rgba(255, 255, 255, 0.6);
+    backdrop-filter: blur(20px);    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.formBlock {
+    width: 409px;
+    height: 382px;
+    left: calc(50% - 409px/2 - 0.5px);
+    top: calc(50% - 382px/2);
+    background: #FFFFFF;
+    box-shadow: 0px 4px 33px rgba(0, 0, 0, 0.04);
+    border-radius: 16px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.formContainer {
+    width: 345px;
+    height: 318px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.nameApplication {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    color: #424242;
+}
+
+.loginContainerInput {
+    width: 345px;
+    height: 96px;
+    margin-top: 32px;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+}
+
+.loginInputName {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 16px;
+    color: #424242;    
+}
+
+.loginBlockInput {
+    width: 345px;
+    height: 50px;
+    margin-top: 7px;
+    padding: 3px 5px 3px 5px;
+    background: #FFFFFF;
+    border: 1px solid #C9CACC;
+    box-sizing: border-box;
+    border-radius: 4px;    
+}
+
+.loginInput {
+    width: 100%;
+    height: 100%;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 16px;
+    color: #424242;  
+}
+
+.errorValidLogin {
+    margin-top: 7px;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 12px;
+    color: #EB1717;    
+}
+
+.passwordContainerInput {
+    width: 345px;
+    height: 96px;
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+}
+
+.passwordInputName {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 16px;
+    color: #424242;    
+}
+
+.passwordBlockInput {
+    width: 345px;
+    height: 50px;
+    margin-top: 7px;
+    padding: 3px 5px 3px 5px;
+    background: #FFFFFF;
+    border: 1px solid #C9CACC;
+    box-sizing: border-box;
+    border-radius: 4px;    
+}
+
+.passwordInput {
+    width: 100%;
+    height: 100%;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 16px;
+    color: #424242;  
+}
+
+.errorValidPassword {
+    margin-top: 7px;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 12px;
+    color: #EB1717;    
+}
+
+.signIn {
+    width: 345px;
+    height: 50px;
+    margin-top: 7px;
+    background: linear-gradient(104.34deg, #41522E -15.34%, #BE8022 145.95%);
+    box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;    
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    color: #FFFFFF;        
+}
+
+.signIn:hover {
+    cursor: pointer;
+    background: linear-gradient(104.34deg, #5c773d -15.34%, #df9526f6 145.95%);
+}
+
+.signIn:active {
+    cursor: pointer;
+    background: linear-gradient(104.34deg, #94d14d -15.34%, #f59e1df6 145.95%);
+}

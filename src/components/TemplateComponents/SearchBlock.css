@@ -1,0 +1,146 @@
+.searchBlock {
+    width: 360px;
+    height: 410px;
+    background: #FFFFFF;
+    box-shadow: 0px 4px 33px rgba(0, 0, 0, 0.04);
+    border-radius: 16px;    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.searchContainer {
+    width: 296px;
+    height: 346px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.locationBlock {
+    width: 296px;
+    height: 76px;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: space-between;
+}
+
+.nameBlock {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    color: #424242;    
+}
+
+.locationInputBlock {
+    width: 296px;
+    height: 50px;
+    background: #FFFFFF;
+    border: 1px solid #C9CACC;
+    border-radius: 4px;
+    padding: 3px 5px 3px 5px;    
+}
+
+.locationInput {
+    width: 100%;
+    height: 100%;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    color: #424242;      
+}
+
+.dateBlock {
+    width: 296px;
+    height: 76px;
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: space-between;
+}
+
+.dateInputBlock {
+    width: 296px;
+    height: 50px;
+    background: #FFFFFF;
+    border: 1px solid #C9CACC;
+    border-radius: 4px;
+    padding: 3px 9px 3px 5px;    
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.dateInput {
+    width: 255px;
+    height: 100%;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    color: #424242;      
+}
+
+.openCalendar {
+    background: none;
+}
+
+
+.numberOfDaysBlock {
+    width: 296px;
+    height: 76px;
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: space-between;
+}
+
+.numberOfDaysInputBlock {
+    width: 296px;
+    height: 50px;
+    background: #FFFFFF;
+    border: 1px solid #C9CACC;
+    border-radius: 4px;
+    padding: 3px 5px 3px 5px;    
+}
+
+.numberOfDaysInput {
+    width: 100%;
+    height: 100%;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    color: #424242;      
+}
+
+.searchHotel {
+    width: 296px;
+    height: 50px;
+    margin-top: 32px;
+    background: linear-gradient(104.34deg, #41522E -15.34%, #BE8022 145.95%);
+    box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;    
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    color: #FFFFFF;    
+}
+
+.searchHotel:hover {
+    cursor: pointer;
+    background: linear-gradient(104.34deg, #5c773d -15.34%, #df9526f6 145.95%);
+}
+
+.searchHotel:active {
+    cursor: pointer;
+    background: linear-gradient(104.34deg, #94d14d -15.34%, #f59e1df6 145.95%);
+}

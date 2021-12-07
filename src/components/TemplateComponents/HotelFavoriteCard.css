@@ -1,0 +1,93 @@
+.HotelFavoriteCard {
+    width: 100%;
+    height: 108px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    border-top: 1px solid rgba(135, 135, 135, 0.2);
+}
+
+.HotelFavoriteCardContainer {
+    width: 100%;
+    height: 90px;
+    display: flex;
+    flex-direction: column;
+}
+
+.headerFavoriteCard {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.hotelFavoriteName {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 17px;
+    color: #424242;    
+}
+
+.favoriteMarkButton {
+    background: none;
+}
+
+.selectedReservation {
+    margin-top: 10px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+}
+
+.reservationContainer {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.reservationDate,
+.totalDays {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    color: #878787;    
+}
+
+.RaitingAndPrice {
+    margin-top: 10px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.Raiting {
+    width: 97px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.price {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 17px;
+    color: #424242;    
+}
+
+.price span {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 11px;
+    color: #878787;    
+    margin-right: 10px;
+}

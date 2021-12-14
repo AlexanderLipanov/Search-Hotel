@@ -57,12 +57,46 @@
     justify-content: space-around;
 }
 
+.sortRating_High_active {
+    width: 89px;
+    height: 28px;
+    background: #FFFFFF;
+    border: 1px solid #41522E;
+    border-radius: 4px; 
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    color: #99A0A3; 
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+}
+
 
 .sortRating_Low {
     width: 89px;
     height: 28px;
     background: #FFFFFF;
     border: 1px solid #E5E5E5;
+    border-radius: 4px; 
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    color: #99A0A3; 
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.sortRating_Low_active {
+    width: 89px;
+    height: 28px;
+    background: #FFFFFF;
+    border: 1px solid #41522E;
     border-radius: 4px; 
     font-family: Roboto;
     font-style: normal;
@@ -106,7 +140,7 @@
 .selectedTopRating_Low span {
     width: 12px;
     height: 2px;
-    background: #E5E5E5;
+    background: #41522E;
 }
 
 .selectedTopRating_Low span:first-child {
@@ -161,7 +195,7 @@
 .selectedBottomRating_Low span {
     width: 12px;
     height: 2px;
-    background: #E5E5E5 ;
+    background: #E5E5E5;
 }
 
 .selectedBottomRating_Low span:first-child {
@@ -178,7 +212,7 @@
 .selectedBottomRating_High span {
     width: 12px;
     height: 2px;
-    background: #E5E5E5;
+    background: #41522E;
 }
 
 .selectedBottomRating_High span:first-child {
@@ -211,6 +245,24 @@
     justify-content: space-around;   
 }
 
+.sortPrice_Low_active {
+    width: 71px;
+    height: 28px;
+    margin-left: 8px;
+    background: #FFFFFF;
+    border: 1px solid #41522E;
+    border-radius: 4px;    
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    color: #99A0A3; 
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;   
+}
+
 .sortPrice_High {
     width: 71px;
     height: 28px;
@@ -227,6 +279,31 @@
     flex-direction: row;
     align-items: center;
     justify-content: space-around;   
+}
+
+.sortPrice_High_active {
+    width: 71px;
+    height: 28px;
+    margin-left: 8px;
+    background: #FFFFFF;
+    border: 1px solid #41522E;
+    border-radius: 4px;    
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    color: #99A0A3; 
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;   
+}
+
+.sortRating_Low:hover,
+.sortRating_High:hover,
+.sortPrice_Low:hover,
+.sortPrice_High:hover {
+    border: 1px solid #41522E;
 }
 
 .selectedBlockPrice {
@@ -260,7 +337,7 @@
 .selectedTopPrice_Low span {
     width: 12px;
     height: 2px;
-    background: #E5E5E5;
+    background: #41522E;
 }
 
 .selectedTopPrice_Low span:first-child {
@@ -330,7 +407,7 @@
 .selectedBottomPrice_High span {
     width: 12px;
     height: 2px;
-    background: #E5E5E5;
+    background: #41522E;
 }
 
 .selectedBottomPrice_High span:first-child {

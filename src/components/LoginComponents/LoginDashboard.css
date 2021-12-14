@@ -56,12 +56,29 @@
     align-items: start;
 }
 
+.loginContainerInputError  {
+    width: 345px;
+    height: 96px;
+    margin-top: 32px;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+}
+
 .loginInputName {
     font-family: Roboto;
     font-style: normal;
     font-weight: 300;
     font-size: 16px;
     color: #424242;    
+}
+
+.loginContainerInputError .loginInputName {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 16px;
+    color: #EB1717; 
 }
 
 .loginBlockInput {
@@ -75,6 +92,17 @@
     border-radius: 4px;    
 }
 
+.loginContainerInputError .loginBlockInput {
+    width: 345px;
+    height: 50px;
+    margin-top: 7px;
+    padding: 3px 5px 3px 5px;
+    background: #FFFFFF;
+    border: 1px solid #EB1717;
+    box-sizing: border-box;
+    border-radius: 4px;
+}
+
 .loginInput {
     width: 100%;
     height: 100%;
@@ -83,6 +111,16 @@
     font-weight: 300;
     font-size: 16px;
     color: #424242;  
+}
+
+.loginContainerInputError .loginInput {
+    width: 100%;
+    height: 100%;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 16px;
+    color: #EB1717;
 }
 
 .errorValidLogin {
@@ -103,12 +141,40 @@
     align-items: start;
 }
 
+.passwordContainerInputError {
+    width: 345px;
+    height: 96px;
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+}
+
+.passwordContainerInputError .passwordInputName {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 16px;
+    color: #EB1717;
+} 
+
 .passwordInputName {
     font-family: Roboto;
     font-style: normal;
     font-weight: 300;
     font-size: 16px;
     color: #424242;    
+}
+
+.passwordContainerInputError .passwordBlockInput {
+    width: 345px;
+    height: 50px;
+    margin-top: 7px;
+    padding: 3px 5px 3px 5px;
+    background: #FFFFFF;
+    border: 1px solid #EB1717;
+    box-sizing: border-box;
+    border-radius: 4px;  
 }
 
 .passwordBlockInput {
@@ -122,6 +188,17 @@
     border-radius: 4px;    
 }
 
+.passwordContainerInputError .passwordBlockInput {
+    width: 345px;
+    height: 50px;
+    margin-top: 7px;
+    padding: 3px 5px 3px 5px;
+    background: #FFFFFF;
+    border: 1px solid #EB1717;
+    box-sizing: border-box;
+    border-radius: 4px; 
+}
+
 .passwordInput {
     width: 100%;
     height: 100%;
@@ -130,6 +207,16 @@
     font-weight: 300;
     font-size: 16px;
     color: #424242;  
+}
+
+.passwordContainerInputError .passwordInput {
+    width: 100%;
+    height: 100%;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 16px;
+    color: #EB1717; 
 }
 
 .errorValidPassword {

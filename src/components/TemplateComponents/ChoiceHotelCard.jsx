@@ -5,9 +5,8 @@ import FavoriteMark from '../../svg/Vector.svg';
 import GoldStar from '../../svg/Vector_star.svg';
 import GreyStar from '../../svg/Vectornostar.png';
 
-const ChoiceHotelCard = (props) => {
 
-    console.log(props, 'choiceHotelCard');
+const ChoiceHotelCard = (props) => {
 
     let rating = props.rating;
     let goldStarArr = [];
@@ -26,8 +25,16 @@ const ChoiceHotelCard = (props) => {
     let goldStarRating = goldStarArr.map( (item,index) => <img src={GoldStar} id={index} key={index} className="goldStar" /> );
     let greyStarRating = greyStarArr.map( (item,index) => <img src={GreyStar} id={index} key={index}  className="greyStar" /> );
 
-    console.log(goldStarArr);
-    console.log(rating);
+    /** подготовка данных карточки отеля для добавления отеля с этими данными в избранное  */
+
+    let FavoriteItem = {
+        HotelName: props.HotelName,
+        id: props.id,
+        price: props.Price,
+        rating: props.rating,
+        checkInPresentation: props.checkInPresentation,
+        checkOutCard: props.checkOutCard,
+    }
 
     return (
         <div id={props.id} className="ChoiceHotelCard">
@@ -38,12 +45,16 @@ const ChoiceHotelCard = (props) => {
             <div className="HotelChoiceCardContainer">
                 <div className="headerChoiceCard">
                     <h2 className="hotelChoiceName">{props.HotelName}</h2>
-                    <button onClick={ () => props.addFavoriteHotel(props.id)} className="ChoiceMarkButton" ><img src={FavoriteMark} alt="" className="ChoiceMark" /></button>
+                    <button onClick={ () => props.addFavoriteHotel(FavoriteItem)} className="ChoiceMarkButton" ><img src={FavoriteMark} alt="" className="ChoiceMark" /></button>
                 </div>
                 <div className="selectedReservationChoice">
                     <div className="reservationChoiceContainer">
-                        <p className="reservationChoiceDate">{props.checkIn}</p>
-                        <p className="totalChoiceDays">{props.checkOut}</p>
+                        <p className="reservationChoiceDate">{props.checkInPresentation}  -  </p>
+                        <p className="totalChoiceDays">{props.checkOutCard} 
+                        { props.checkOutCard === 1 ? <span className="inclination"> день</span> : null }
+                        { props.checkOutCard > 1 && props.checkOutCard < 5 ? <span className="inclination"> дня</span> : null }
+                        { props.checkOutCard > 4 ? <span className="inclination"> дней</span> : null }
+                        </p>
                     </div>
                 </div>
                 <div className="ChoiceRaitingAndPrice">
@@ -51,7 +62,7 @@ const ChoiceHotelCard = (props) => {
                         {goldStarRating}
                         {greyStarRating}
                     </div>
-                    <p className="ChoicePrice"><span>Price:</span>{props.Price}</p>
+                    <p className="ChoicePrice"><span>Price:</span>{props.Price} rub</p>
                 </div>
             </div>
             </div>

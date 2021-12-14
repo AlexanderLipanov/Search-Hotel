@@ -78,7 +78,7 @@
 }
 
 .dateInput {
-    width: 255px;
+    width: 296px;
     height: 100%;
     font-family: Roboto;
     font-style: normal;
@@ -90,7 +90,6 @@
 .openCalendar {
     background: none;
 }
-
 
 .numberOfDaysBlock {
     width: 296px;
@@ -118,7 +117,13 @@
     font-style: normal;
     font-weight: 500;
     font-size: 16px;
-    color: #424242;      
+    color: #424242; 
+    -moz-appearance:textfield;     
+}
+
+.numberOfDaysInput::-webkit-outer-spin-button,
+.numberOfDaysInput::-webkit-inner-spin-button {
+    -webkit-appearance: none;
 }
 
 .searchHotel {

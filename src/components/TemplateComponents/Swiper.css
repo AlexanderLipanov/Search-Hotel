@@ -1,23 +1,14 @@
 
-.swiper-slide {
-    width: 164px;
-    height: 149px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
 
-.slideImage {
+.swiperImage {
     width: 164px;
     height: 149px;
     border-radius: 10px;
+    box-shadow: 0px 3px 4px rgba(0, 0, 0, 0.15);
 }
 
 .slideBlock {
-    width: 164px;
-    height: 149px;
-    box-shadow: 0px 3px 4px rgba(0, 0, 0, 0.15);
-    border-radius: 10px;
+    padding: 1.5px 1.5px 1.5px 1.5px;
     cursor: pointer;
-    overflow: hidden;    
+    overflow: hidden;   
 }

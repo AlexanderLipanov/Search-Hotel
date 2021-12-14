@@ -117,3 +117,15 @@
 .listChoiceHotelsBlockScroll::-webkit-scrollbar { width: 0; }
 .listChoiceHotelsBlockScroll { -ms-overflow-style: none; }
 .listChoiceHotelsBlockScroll { overflow: -moz-scrollbars-none; }
+
+.error {
+    margin-left: 25%;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 14px;
+    display: flex;
+    align-items: center;
+    color: #EB1717;
+}

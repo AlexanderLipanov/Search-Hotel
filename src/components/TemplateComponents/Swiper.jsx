@@ -10,12 +10,10 @@ import useSwiper from "use-swiper";
 
 const MySwiper = (props) => {
 
-    console.log(props, 'IMAGES');
-
     const { ref } = useSwiper({ slidesPerView: 3.4, loop: true});
 
     let Slides = props.SwiperSlides.map( (item) => <div key={item.id} className="slideBlock" >
-        <img src={require(item.image)} alt="" className="swiperImage" /></div> )
+        <img src={item.image} alt="" className="swiperImage" /></div> )
 
     return(
         <div className="swipar">

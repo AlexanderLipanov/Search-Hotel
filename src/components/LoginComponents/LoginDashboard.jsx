@@ -3,7 +3,6 @@ import './LoginDashboard.css';
 import { connect } from 'react-redux';
 import {inputEmail, inputPassword, signIn, logInCookies} from '../../redux/actions/actionCreatore';
 import {Navigate} from 'react-router-dom';
-import Cookies from 'js-cookie';
 
 class LoginDashboard extends React.Component  {
 
@@ -34,16 +33,23 @@ class LoginDashboard extends React.Component  {
 
     render() {
 
+        if ((localStorage.getItem('email') === this.props.emailForLogIn) 
+        && (localStorage.getItem('password') === this.props.passwordForLogIn)) {
+
+            this.logInCookies();
+        }
+
+        console.log( localStorage.getItem('email'),
+                    localStorage.getItem('password'),
+                    'LocalStorage' );
 
         /* делает проверку на логинизацию и если пользователь не залогирован, перенаправляет на страницу регистрации/логинизации */
-
-        if ((Cookies.get('email') === this.props.emailForLogIn) 
-            && (Cookies.get('password') === this.props.passwordForLogIn)) {
-                this.logInCookies();
-            } 
+            
         if (this.props.isLogIn === true)  {
                 return <Navigate to='/template' />;
             }
+
+        console.log(this.props.isLogIn, this.email, this.password);
 
         const loginBlockInput = 'loginContainerInput';
         const loginBlockInputError = 'loginContainerInputError'; 
@@ -97,8 +103,6 @@ let mapStateToProps = (state) => {
     return {
         emailInput: state.loginReducer.emailInput,
         passwordInput: state.loginReducer.passwordInput,
-        emailInputCookie: state.loginReducer.emailInputCookie,
-        passwordInputCookie: state.loginReducer.passwordInputCookie,
         isLogIn: state.loginReducer.isLogIn,
         emailValid: state.loginReducer.emailValid,
         passwordValid: state.loginReducer.passwordValid,

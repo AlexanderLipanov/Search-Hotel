@@ -7,7 +7,6 @@ import ChoiceHotelBlock from "./ChoiceHotelBlock";
 import {logOut} from '../../redux/actions/actionCreatore';
 import {connect} from 'react-redux';
 import {Navigate} from 'react-router-dom';
-import Cookies from 'js-cookie';
 
 
 class Template extends React.Component {
@@ -16,13 +15,22 @@ class Template extends React.Component {
 
     logOut = () => {    
 
-        Cookies.remove('password');
-        Cookies.remove('email');
+        localStorage.removeItem('email');
+        localStorage.removeItem('password');
         this.props.logOut();
     }    
 
     render() {
-        
+
+        this.email = this.props.emailInputCookie;
+        this.password = this.props.passwordInputCookie;
+
+        if ((this.email !== '') && (this.password !== '')) {
+
+            localStorage.setItem('email', this.email);
+            localStorage.setItem('password', this.password);
+        }
+
         /* проверка на логинизацию */
 
         if (this.props.isLogIn === null) {

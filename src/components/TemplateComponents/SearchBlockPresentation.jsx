@@ -4,8 +4,6 @@ import {useDispatch} from 'react-redux';
 
 const SearchBlockPresentation = (props) => {
 
-    console.log(props);
-
     const dispatch = useDispatch(props.location);
 
     /** создаем дату выезда для отправки запроса на сервер */

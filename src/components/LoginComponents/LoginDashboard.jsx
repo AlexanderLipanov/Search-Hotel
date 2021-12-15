@@ -39,17 +39,11 @@ class LoginDashboard extends React.Component  {
             this.logInCookies();
         }
 
-        console.log( localStorage.getItem('email'),
-                    localStorage.getItem('password'),
-                    'LocalStorage' );
-
         /* делает проверку на логинизацию и если пользователь не залогирован, перенаправляет на страницу регистрации/логинизации */
             
         if (this.props.isLogIn === true)  {
                 return <Navigate to='/template' />;
             }
-
-        console.log(this.props.isLogIn, this.email, this.password);
 
         const loginBlockInput = 'loginContainerInput';
         const loginBlockInputError = 'loginContainerInputError'; 

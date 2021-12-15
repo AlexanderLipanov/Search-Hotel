@@ -113,7 +113,7 @@ const choiceReducer = (state = intialState, { type, id, payload, FavoriteItem, r
         case SORT_RATING_HIGH: // сортируем список избранных отелей на увеличение по рейтингу
             return {
                 ...state,
-                FavoriteHotels: [...state.FavoriteHotels.sort( (a,b) => b.rating -a.rating )],
+                FavoriteHotels: [...state.FavoriteHotels.sort( (a,b) => (b.rating+Math.random()) -(a.rating+Math.random()) )],
                 sortActiveClassRating: '_active',
                 sortActiveClassPrice: '',
             }; 
@@ -129,7 +129,7 @@ const choiceReducer = (state = intialState, { type, id, payload, FavoriteItem, r
         case SORT_RATING_LOW: // сортируем список избранных отелей на уменьшение по рейтингу
             return {
                 ...state,
-                FavoriteHotels: [...state.FavoriteHotels.sort( (a,b) => a.rating -b.rating )],
+                FavoriteHotels: [...state.FavoriteHotels.sort( (a,b) => (a.rating+Math.random()) -(b.rating+Math.random()) )],
                 sortActiveClassRating: '_active',
                 sortActiveClassPrice: '',
             };     

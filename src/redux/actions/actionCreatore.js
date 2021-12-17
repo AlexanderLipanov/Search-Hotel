@@ -3,6 +3,7 @@ import {
     SORT_PRICE_HIGH, SORT_RATING_HIGH,
     SORT_PRICE_LOW, SORT_RATING_LOW,
     SET_HOTELS_DID_MOUNT,
+    FETCH_FAILED,
     } from '../reducers/choiceReducer';
 import {INPUT_LOCATION, INPUT_DATE, INPUT_CHECK_OUT, TODAY} from '../reducers/searchReducer';
 import {INPUT_EMAIL, INPUT_PASSWORD, SIGN_IN, LOG_OUT, LOG_IN_COOKIES} from '../reducers/loginReducer';
@@ -82,6 +83,10 @@ export const setHotelsDidMoutn = (response) => ({
 
 export const logInCookies = () => ({
     type: LOG_IN_COOKIES,
+});
+
+export const fetchFailed = () => ({
+    type: FETCH_FAILED,
 });
 
 

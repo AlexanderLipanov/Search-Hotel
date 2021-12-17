@@ -68,7 +68,7 @@ class LoginDashboard extends React.Component  {
                                         : <p className="errorValidLogin">Не правильный логин</p> }
                                         {this.props.emailValidation 
                                         ? null
-                                        : <p className="errorValidLogin">Только латинские символы</p>  }
+                                        : <p className="errorValidLogin">Введите email, только латинские символы</p>  }
                                 </div>
                                 <div className={ this.props.passwordValid ? passwordContainerInput : passwordContainerInputError }>
                                     <h4 className="passwordInputName">Пароль</h4>

@@ -27,7 +27,7 @@ const loginReducer = (state = initialState, {type, email, password}) => {
 
         let copyStateEmail = {...state};
             copyStateEmail.emailInput = email;
-        const reg = /^[a-zA-Z0-9.!#$%&'*+\/=?^_`{|}~-]+@[a-zA-Z0-9](?:[a-zA-Z0-9-]{0,61}[a-zA-Z0-9])?(?:\.[a-zA-Z0-9](?:[a-zA-Z0-9-]{0,61}[a-zA-Z0-9])?)*$/;
+        const reg = /^[a-zA-Z0-9]+$/;
             if (reg.test(String(email).toLowerCase()) === true) {
                 copyStateEmail.emailValidation = true;
             } else {

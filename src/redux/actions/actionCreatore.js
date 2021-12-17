@@ -85,8 +85,9 @@ export const logInCookies = () => ({
     type: LOG_IN_COOKIES,
 });
 
-export const fetchFailed = () => ({
+export const fetchFailed = (error) => ({
     type: FETCH_FAILED,
+    error
 });
 
 

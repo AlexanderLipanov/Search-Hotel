@@ -2,7 +2,7 @@ import { put, takeEvery, all, } from 'redux-saga/effects';
 
 
 export const FETCH_HOTELS = 'FETCH_HOTELS';
-export const baseURL = 'http://engine.hotellook.com/api/v2/cache.json';
+export const baseURL = 'https://engine.hotellook.com/api/v2/cache.json';
 
 /** функция запроса на сервер с введенными данными */
 

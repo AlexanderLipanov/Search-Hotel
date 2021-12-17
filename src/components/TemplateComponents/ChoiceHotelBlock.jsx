@@ -3,7 +3,7 @@ import Arrow from '../../svg/VectorArrow.svg';
 import './ChoiceHotelBlock.css';
 import ChoiceHotelCard from "./ChoiceHotelCard";
 import { connect } from "react-redux";
-import {addFavoriteHotel, setHotelsDidMoutn, fetchFailed} from '../../redux/actions/actionCreatore';
+import {addFavoriteHotel, setHotelsDidMoutn} from '../../redux/actions/actionCreatore';
 import MySwiper from './Swiper';
 import { baseURL } from "../../redux/saga";
 
@@ -36,14 +36,10 @@ class ChoiceHotelBlock extends React.Component {
     componentDidMount() {
 
         /** запрашиваем данные отелей для данных поиска по умоляанию */
-
-        try {
+        
             fetch(`${baseURL}?location=${this.fetchParams.location}&currency=rub&checkIn=${this.fetchParams.checkIn}&checkOut=${this.fetchParams.checkOut}&limit=10`)
             .then( response => response.json())
             .then( response => this.props.setHotelsDidMoutn(response) );
-        } catch (error) {
-            this.props.fetchFailed();
-        }
     }
     
     render() {
@@ -96,7 +92,7 @@ class ChoiceHotelBlock extends React.Component {
     }
 }
 
-export default connect( null, {addFavoriteHotel, setHotelsDidMoutn, fetchFailed})(ChoiceHotelBlock);
+export default connect( null, {addFavoriteHotel, setHotelsDidMoutn,})(ChoiceHotelBlock);
 
 
 
